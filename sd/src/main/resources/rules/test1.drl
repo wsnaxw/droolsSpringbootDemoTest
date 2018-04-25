@@ -1,0 +1,24 @@
+package com.test.sd.test1
+
+
+//function String abc(){
+//return  "123";
+//}
+
+ query Q1 (Integer i)
+     String( this == i.toString() )
+ end
+ rule "RR"
+ when
+     $i : Integer()
+     ?Q1( $i ;)
+ then
+     System.out.println( $i );
+ end
+
+rule "ceshi"
+when
+then
+   System.out.println("test11231234412");
+ end
+
